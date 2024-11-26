@@ -1,0 +1,50 @@
+.pinPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: calc(100vh - 90px);
+	font-family: Arial, sans-serif;
+	background-color: #e4e4e4;
+	&__display {
+		margin-bottom: 20px;
+		font-size: 24px;
+		padding: 10px;
+		width: 300px;
+		text-align: left;
+		background: #fff;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		width: 300px;
+	}
+
+	&__button {
+		padding: 15px;
+		font-size: 20px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		font-weight: bold;
+		cursor: pointer;
+		background-color: #d9d9d9;
+		transition: background-color 0.2s;
+		height: 60px;
+		transition: all 0.2s ease; /* Анимация для эффекта */
+		&:hover {
+			background-color: #e0e0e0;
+			box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Увеличенная тень при наведении */
+		}
+		&active {
+			background-color: #e0e0e0;
+			box-shadow: none; /* Увеличенная тень при наведении */
+		}
+		&_dell {
+			height: 30px;
+		}
+	}
+}
